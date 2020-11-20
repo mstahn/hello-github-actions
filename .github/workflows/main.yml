@@ -17,3 +17,11 @@ jobs:
             sudo apt-get install build-essential -y
             gcc somebinary.c -o somebinary
             ./somebinary
+# Using container:
+#    steps:
+#        - uses: actions/checkout@v1
+#        - name: npm install and build webpack
+#        run: |
+#            npm install
+#            npm run build
+		
