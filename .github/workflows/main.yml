@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: npm install and build webpack
+      - name: Workflow step 1
         run: |
             sudo apt-get update
             sudo apt-get upgrade
+            ls -lisah
+            ls -lisah /
