@@ -17,6 +17,10 @@ jobs:
             sudo apt-get install build-essential -y
             gcc somebinary.c -o somebinary
             ./somebinary
+      - uses: actions/upload-artifact@master
+        with:
+          name: Some uploaded file
+          path: somebinary
 # Using container:
 #    steps:
 #        - uses: actions/checkout@v1
